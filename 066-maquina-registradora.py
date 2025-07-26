@@ -1,3 +1,4 @@
+#exercício 5.15 - pg 145
 # escreva um programa paar controlar uma pequena máquina registradora. Você deve solicitar ao usuário que digite o código do produto e
 # a quantidade comprada. Utilize a tabela de códigos a seguir para obter o preço de cada produto
 # seu programa deve exibir o total das compras depois que o usuário digitar 0. Qualquer outro código deve gerar a mensagem de 
