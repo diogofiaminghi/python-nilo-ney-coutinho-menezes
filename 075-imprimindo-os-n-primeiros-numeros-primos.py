@@ -1,15 +1,22 @@
-# exercício 5.24 pg 149
-# modifique o programa anterior de forma a ler um número n. Imprima os n primeiros números primos.
+#exercício 5.23 pg 149
+# modifique o programa anterior de forma a ler umnúmero n. Iimprima os n primeiros números primos.
 
-x_primeiros_primos = -1
+n = int(input("Digite quantos números primos deseja encontrar: "))
 
-while numero <= 0:
-    print("****** IMPRIMINDO OS N PRIMEIROS NÚMEROS PRIMOS ******")
-    x_primeiros_primos = int(input("Digite o número: "))
+contador = 0        # Conta quantos primos já foram encontrados
+numero = 2          # Começamos verificando a partir do número 2
 
-if x_primeiros_primos == 1:
-    print("2")
-    exit()
+while contador < n:
+    eh_primo = True
+    i = 2
+    while i * i <= numero: # Enquanto o quadrado de i for menor ou igual ao número atual, continue testando.
+        if numero % i == 0:
+            eh_primo = False
+            break
+        i += 1
 
-numero_a_ser_testado = 3
+    if eh_primo:
+        print(numero)
+        contador += 1
 
+    numero += 1
